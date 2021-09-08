@@ -10,4 +10,4 @@ RUN java -version
  
 CMD ["java","-jar","dropwizard-example3-1.0-SNAPSHOT.jar","server","config.yml"]
  
-EXPOSE 4000-4001
+EXPOSE 8080-8081
