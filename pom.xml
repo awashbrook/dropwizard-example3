@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project
-        xmlns="http://maven.apache.org/POM/4.0.0"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
@@ -12,12 +10,13 @@
     <packaging>jar</packaging>
 
     <name>HelloWorld</name>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <dropwizard.version>2.1.0-beta.3</dropwizard.version>
         <mainClass>com.test.dropwizard.HelloWorldApplication</mainClass>
+        <git.repository>awashbrook/dropwizard-example3</git.repository>
+        <project.scm.id>github</project.scm.id>
     </properties>
 
     <dependencyManagement>
@@ -136,6 +135,10 @@
         </plugins>
     </build>
 
+    <scm>
+        <developerConnection>scm:git:https://github.com/${git.repository}.git</developerConnection>
+    </scm>
+
     <reporting>
         <plugins>
             <plugin>
@@ -167,4 +170,11 @@
             </properties>
         </profile>
     </profiles>
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub</name>
+            <url>https://maven.pkg.github.com/${git.repository}</url>
+        </repository>
+    </distributionManagement>
 </project>
