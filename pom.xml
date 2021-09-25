@@ -5,7 +5,7 @@
 
     <groupId>com.test.dropwizard</groupId>
     <artifactId>dropwizard-example3</artifactId>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.3</version>
     <packaging>jar</packaging>
 
     <name>HelloWorld</name>
@@ -136,7 +136,7 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/${git.repository}.git</developerConnection>
-      <tag>HEAD</tag>
+      <tag>dropwizard-example3-1.0.3</tag>
   </scm>
 
     <reporting>
