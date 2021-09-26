@@ -23,7 +23,7 @@ jobs:
         with:
           java-version: '8'
           distribution: 'zulu'
-#          cache: 'maven'
+          cache: 'maven'
       - name: Configure Git user
         run: |
           git config user.email "actions@github.com"
