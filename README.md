@@ -19,7 +19,7 @@ Health Check
 # Docker port mapping the dual webapp and health endpoints of DropWizard
 docker run -p 8080:8080 -p 8081:8081 dropwizard-example3
  
-You should see Hello-world app starting up...
+You should see Hello-world app starting up
 
 ================================================================================
 
